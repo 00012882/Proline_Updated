@@ -1,0 +1,96 @@
+.cmpvendors__header{
+    font-size: calc(2.2 * var(--fs));
+    font-family: 'Proxima Nova Bold';
+    position: relative;
+    padding: calc(2 * var(--offset));
+    text-align: center;
+
+    &::before{
+        content: "";
+        position: absolute;
+        border-left: calc(0.08 * var(--offset)) solid var(--c4);
+        border-bottom: calc(0.08 * var(--offset)) solid var(--c4);
+        height: calc(1.6 * var(--offset));
+        width: calc(1.6 * var(--offset));
+        left: 0;
+        bottom: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        border-right: calc(0.08 * var(--offset)) solid var(--c4);
+        border-top: calc(0.08 * var(--offset)) solid var(--c4);
+        height: calc(1.6 * var(--offset));
+        width: calc(1.6 * var(--offset));
+        right: 1;
+        top: 0;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: calc(2 * var(--fs));
+        padding: calc(1 * var(--offset));
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: calc(1.6 * var(--fs));
+        padding: calc(0.8 * var(--offset));
+    }
+}
+
+.cmpvendors__top{
+    display: flex;
+    flex-direction: column;
+    gap: calc(5 * var(--offset));
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(5 * var(--offset));
+}
+
+.cmpvendors__text{
+    text-align: center;
+    width: calc(50 * var(--offset));
+    line-height: 1.7;
+
+    @media screen and (max-width: 785px) {
+        width: calc(40 * var(--offset));
+    }
+
+    @media screen and (max-width: 620px) {
+        width: calc(30 * var(--offset));
+    }
+
+    @media screen and (max-width: 455px) {
+        width: calc(20 * var(--offset));
+    }
+
+    @media screen and (max-width: 340px) {
+
+    }
+}
+
+.cmpvendors__list{
+    display: flex;
+}
+
+.cmpvendors__bot{
+    border: calc(0.08 * var(--offset)) solid var(--c10);
+}
+
+.cmpvendors__list{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cmpvendors__svg{
+    padding: calc(1.5 * var(--offset));
+    border: calc(0.08 * var(--offset)) solid var(--c10);
+
+}
+
+.cmpvendors__svg>svg{
+    min-width: calc(1 * var(--offset));
+    max-width: calc(10 * var(--offset));
+}

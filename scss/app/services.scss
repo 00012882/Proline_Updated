@@ -1,0 +1,122 @@
+.cmpservice__content{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        gap: calc(5 * var(--offset));
+    }
+}
+
+.cmpservice{
+    position: relative;
+}
+
+.cmpservice__card{
+    height: 60vh;
+    position: relative;
+    bottom: -10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: calc(1.5 * var(--offset));
+    border-right: calc(0.08 * var(--offset)) solid var(--c10);
+    border-left: calc(0.08 * var(--offset)) solid var(--c10);
+    padding: calc(2 * var(--offset));
+
+    @media screen and (max-width: 1200px) {
+        border: none;
+        flex-direction: row-reverse;
+        height: calc(8 * var(--offset));
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(30 * var(--offset));
+    }
+}
+
+.servcard__text{
+    @media screen and (max-width: 1200px) {
+        width: 35%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: calc(2 * var(--offset));
+    }
+}
+
+.cmpservice__header{
+    font-family: "Proxima Nova Bold";
+    font-size: calc(1.4 * var(--fs));
+    transition: 0.2s all ease-in-out;
+}
+
+.cmpservice__card:hover .cmpservice__header{
+    color: var(--c4);
+}
+
+.cmpservice__text{
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+
+    @media screen and (max-width: 1200px) {
+        opacity: 1;
+    }
+}
+
+.cmpservice__card:hover .cmpservice__text{
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+.cmpservice__img1,
+.cmpservice__img2,
+.cmpservice__img3,
+.cmpservice__img4 {
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+        width: 65%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        opacity: 1;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.card1:hover .cmpservice__img1,
+.card2:hover .cmpservice__img2,
+.card3:hover .cmpservice__img3,
+.card4:hover .cmpservice__img4 {
+    opacity: 1;
+    transition: 0.2s all ease-in-out;
+}
+
+.card4, .card3{
+    @media screen and (max-width: 1000px) {
+        margin-top: calc(10 * var(--offset));
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-top: calc(2 * var(--offset));
+    }
+}

@@ -1,0 +1,195 @@
+.svg{
+    padding: 0;
+    margin: 0;
+}
+
+.brands{
+    margin-top: calc(2 * var(--offset));
+    background-color: var(--c1);
+    border: calc(0.08 * var(--offset)) solid var(--c10);
+    margin-bottom: calc(5 * var(--offset));
+}
+
+.brand__card{
+    padding: calc(2 * var(--offset)) calc(0.6 * var(--offset));
+    border-left: calc(0.08 * var(--offset)) solid var(--c10);
+    border-right: calc(0.08 * var(--offset)) solid var(--c10);
+    height: calc(2 * var(--offset));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4{
+        @media screen and (max-width: 350px) {
+            font-size: calc(0.8 * var(--fs));
+        }
+    }
+
+    @media screen and (max-width: 1450px) {
+        width: calc(12 * var(--offset));
+    }
+}
+
+.brands__content{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.bc-6{
+    @media screen and (max-width: 1450px) {
+        display: none;
+    }
+}
+
+.bc-5{
+    @media screen and (max-width: 1250px) {
+        display: none;
+    }
+}
+
+.bc-4{
+    @media screen and (max-width: 1050px) {
+        display: none;
+    }
+}
+
+.bc-3{
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
+}
+
+.bc-2{
+    @media screen and (max-width: 650px) {
+        display: none;
+    }
+}
+
+.brand__svg{
+    width: calc(10 * var(--offset));
+    height: calc(2 * var(--offset));
+
+    @media screen and (max-width: 450px) {
+        width: calc(8 * var(--offset));
+        height: calc(1.6 * var(--offset));
+    }
+
+    @media screen and (max-width: 350px) {
+        width: calc(6 * var(--offset));
+        height: calc(1.2 * var(--offset));
+    }
+}
+
+.arrowbrand{
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.arrow__svg{
+    padding: calc(2 * var(--offset)) calc(0.6 * var(--offset));
+    border-left: calc(0.08 * var(--offset)) solid var(--c10);
+    border-right: calc(0.08 * var(--offset)) solid var(--c10);
+    width: calc(3 * var(--offset));
+    height: calc(2 * var(--offset));
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 450px) {
+        width: calc(1.5 * var(--offset));
+        height: calc(2 * var(--offset));
+    }
+}
+
+.menu{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.menu__header{
+    font-size: calc(2 * var(--fs));
+    font-family: "Proxima Nova Bold";
+    margin-bottom: calc(3 * var(--offset));
+}
+
+.menu__content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(25 * var(--offset)), max-content));
+    grid-template-rows: calc(15  * var(--offset)) calc(15 * var(--offset));
+    grid-gap: calc(2 * var(--offset));
+}
+
+.menu__card{
+    color: var(--c2);
+    background-color: var(--c1);
+    min-width: calc(23 * var(--offset));
+    height: calc(8.5 * var(--offset));
+    display: flex;
+    padding: calc(2 * var(--offset));
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s all ease-in-out !important;
+    cursor: pointer;
+
+    b{
+        font-size: calc(1.2 * var(--fs));
+        font-family: "Proxima Nova Bold";
+    }
+
+    svg{
+        z-index: 7348743843472847;
+    }
+
+    &:hover{
+        background-color: var(--c9);
+        transition: 0.2s all ease-in-out;
+    }
+
+    @media screen and (max-width: 450px) {
+        min-width: calc(20 * var(--offset));
+    }
+
+    @media screen and (max-width: 450px) {
+        min-width: calc(11 * var(--offset));
+    }
+}
+
+.menu__card:hover .menu__bold{
+    transition: 0.2s all ease-in-out;
+    color: var(--c4);
+}
+
+.block__1{
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+    background-color: var(--c9);
+    width: calc(12.5 * var(--offset));
+    height: calc(12.5 * var(--offset));
+    rotate: 45deg;
+    right: -30%;
+    top: 0;
+    overflow: hidden;
+}
+
+.block__2{
+    position: absolute;
+    background-color: var(--c7);
+    width: calc(12.5 * var(--offset));
+    height: calc(12.5 * var(--offset));
+    right: -13%;
+    top: -13%;
+    overflow: hidden;
+}
+
+.block__3{
+    position: absolute;
+    background-color: var(--c8);
+    width: calc(12.5 * var(--offset));
+    height: calc(12.5 * var(--offset));
+    right: -12%;
+    top: -12%;
+    overflow: hidden;
+}
